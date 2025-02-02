@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NKrypt</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo cyber-gradient">NKrypt</div>
+            <div class="nav-item active">
+                <i class="fas fa-folder-open"></i>
+                My Vault
+            </div>
+            <div class="nav-item check-balance-btn active">
+                <i class="fas fa-coins"></i>
+                Revoke Access
+            </div>
+            
+            <div class="nav-item share-access-btn active">
+                <i class="fas fa-share"></i>
+                Share Access
+            </div>
+            <div class="nav-item transfer-ownership-btn active">
+                <i class="fas fa-id-card"></i>
+                Transfer Ownership
+            </div>
+            
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <h1 class="cyber-glow">NKrypt</h1>
+                <button class="upload-btn">
+                    <i class="fa fa-link"></i>Connect Wallet
+                </button>
+            </div>
+            
+                <div class="file-card upload-file-btn">
+                    <i class="fas fa-plus-square file-icon"></i>
+                    <div class="file-name">Upload File</div>
+                    <div class="file-details">Quantum Safe</div>
+                </div>
+                <div class="file-card view-shared-btn">
+                    <i class="fas fa-database file-icon"></i>
+                    <div class="file-name">View Shared Files</div>
+                    <div class="file-details">shared files</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Balance Check Popup -->
+    <div class="balance-popup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h2>Revoke Access</h2>
+                <span class="close-popup">&times;</span>
+            </div>
+            <form id="balanceForm">
+                <div class="input-group">
+                    <label>Account Number</label>
+                    <input type="text" placeholder="Enter account number" required>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-coins"></i> Revoke Access
+                </button>
+            </form>
+        </div>
+    </div>
+    <!-- Transfer Ownership Popup -->
+<div class="transfer-popup">
+    <div class="popup-content">
+        <div class="popup-header">
+            <h2>Transfer Ownership</h2>
+            <span class="close-transfer-popup">&times;</span>
+        </div>
+        <form id="transferForm">
+
+            <div class="input-group">
+                <label>Account Number</label>
+                <input type="text" placeholder="Enter recipient account number" required>
+            </div>
+            <button type="submit" class="submit-btn">
+                <i class="fas fa-exchange-alt"></i> Transfer Ownership
+            </button>
+        </form>
+    </div>
+</div>
+           <!-- Upload File Popup -->
+<div class="upload-popup">
+    <div class="popup-content">
+        <div class="popup-header">
+            <h2>Upload Files</h2>
+            <span class="close-upload-popup">&times;</span>
+        </div>
+        <form id="uploadForm">
+            <div class="input-group">
+                <label>Select File</label>
+                <input type="file" id="fileInput" required>
+            </div>
+            
+            <button type="submit" class="submit-btn">
+                <i class="fas fa-cloud-upload-alt"></i> Upload
+            </button>
+        </form>
+    </div>
+</div>
+<!-- View Shared Files Popup -->
+<div class="view-popup">
+    <div class="popup-content">
+        <div class="popup-header">
+            <h2>View Shared Files</h2>
+            <span class="close-view-popup">&times;</span>
+        </div>
+        <form id="viewForm">
+            <div class="input-group">
+                <label>MetaMask ID</label>
+                <input type="text" placeholder="Enter your MetaMask ID" required>
+            </div>
+            <button type="submit" class="submit-btn">
+                <i class="fas fa-eye"></i> View Shared Files
+            </button>
+        </form>
+    </div>
+</div>
+<!-- Share Access Popup -->
+<div class="share-popup">
+    <div class="popup-content">
+        <div class="popup-header">
+            <h2>Share Access</h2>
+            <span class="close-share-popup">&times;</span>
+        </div>
+        <form id="shareForm">
+            <div class="input-group">
+                <label>Recipient's Address</label>
+                <input type="text" placeholder="Enter recipient's wallet address" required>
+            </div>
+            <button type="submit" class="submit-btn">
+                <i class="fas fa-share"></i> Share Access
+            </button>
+        </form>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
